@@ -1,1 +1,1 @@
-# SAPNet-Semantic-aware-SAM-for-Point-Supervised-Instance-Segmentation
+# SAPNet: Semantic-aware-SAM-for-Point-Supervised-Instance-Segmentation
