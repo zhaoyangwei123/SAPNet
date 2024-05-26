@@ -3,7 +3,7 @@ our GUPs: 8 * RTX3090
 
 # Prerequisites
 #install environment following
-
+```sh
 conda create -n open-mmlab python=3.9 -y
 conda activate open-mmlab
 # install latest pytorch prebuilt with the default prebuilt CUDA version (usually the latest)
@@ -20,7 +20,7 @@ pip install -r requirements/build.txt
 pip install -v -e . --user  # or try "python setup.py develop" if get still got pycocotools error
 chmod +x tools/dist_train.sh
 pip install scikit-image
-
+```
 
 
 #  Prepare dataset COCO
