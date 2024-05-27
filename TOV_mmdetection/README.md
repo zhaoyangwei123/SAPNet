@@ -28,6 +28,7 @@ pip install scikit-image
 2. generate point annotation or download point annotation(
 [Baidu Yun passwd:6752](https://pan.baidu.com/s/1XF9TneCxByqOJfAaqciP8A?pwd=6752 ) or 
 [Google Driver]()],
+3. generate SAM_results with point prompt
 move annotations/xxx to data/coco/annotations_qc_pt/xxx
 
 
@@ -64,14 +65,14 @@ PYTHONPATH=. python huicv/coarse_utils/noise_data_utils.py "generate_pseudo_bbox
     --pseudo_w ${WH[0]} --pseudo_h ${WH[1]}
 ```
 
-## 3.For other dataset, we can transform the annotation style to coco json style and use the same way.
+## 3.For other dataset, we can transform the annotation style to coco json style and use the same way, after this, you can genertae annotation 
 
 # Train, Test and Visualization
 
 ## Take COCO as example
 ### Prepare trained model 
 1. move coco dataset (2017 version) or make a soft link to data/coco
-2. download weight from [Baidu Yun(passwd:3pfu)](https://pan.baidu.com/s/1G_S0zYJNMtBYF3fiH6XcKA?pwd=3pfu) or [Google Driver]() ,
+2. download weight and annotation from [Baidu Yun(passwd:u5fu)](链接: https://pan.baidu.com/s/1d1sWCpytBlynQ8NUd1O7bw) or [Google Driver](https://drive.google.com/drive/folders/1TKy9DpvNAqr5IdMG85NjDFp_X7iUryk-?usp=drive_link) ,
 
 
 
