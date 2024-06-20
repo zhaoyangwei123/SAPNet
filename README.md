@@ -1,5 +1,5 @@
 ## CVPR2024, Semantic-aware SAM for Point-Prompted Instance Segmentation
-SAPNet
+SAPNet(highlight paper)
 --------------
 
 SAPNet a newly proposed method for point-prompted instance segmentation tasks is based on [mmdetection](https://github.com/open-mmlab/mmdetection). 
