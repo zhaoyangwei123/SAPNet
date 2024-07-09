@@ -72,7 +72,7 @@ PYTHONPATH=. python huicv/coarse_utils/noise_data_utils.py "generate_pseudo_bbox
 ## Take COCO as example
 ### Prepare trained model 
 1. move coco dataset (2017 version) or make a soft link to data/coco
-2. download weight and annotation from [Baidu Yun(passwd:u5fu)](链接: https://pan.baidu.com/s/1d1sWCpytBlynQ8NUd1O7bw) or [Google Driver](https://drive.google.com/drive/folders/1TKy9DpvNAqr5IdMG85NjDFp_X7iUryk-?usp=drive_link) ,
+2. download weight and annotation(coco and voc2012SBD) from [Baidu Yun(passwd:u5fu)](链接: https://pan.baidu.com/s/1d1sWCpytBlynQ8NUd1O7bw) or [Google Driver](https://drive.google.com/drive/folders/1TKy9DpvNAqr5IdMG85NjDFp_X7iUryk-?usp=drive_link) ,
 
 
 
