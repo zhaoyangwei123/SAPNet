@@ -83,9 +83,13 @@ PYTHONPATH=. python huicv/coarse_utils/noise_data_utils.py "generate_pseudo_bbox
    CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 PORT=10000 tools/dist_train.sh configs2/COCO/SAPNet/SAPNet_r50_fpn_1x_coco_ms.py 8 
     ```
 
-2. inference with trained P2BNet to get pseudo box and train FasterRCNN with pseudo box
+2. inference with trained SAPNet
     ```shell script
-	work_dir='../TOV_mmdetection_cache/work_dir/coco/' && CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 PORT=10000 tools/dist_test.sh configs2/COCO/P2BNet/SAPNet_r50_fpn_1x_coco.py epoch_12.pth 8 
+    multi-gpu:
+	CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 PORT=10000 tools/dist_test.sh configs2/COCO/SAPNet/SAPNet_r50_fpn_1x_coco_ms.py 8
+    single-gpu:
+    	export CUDA_VISIBLE_DEVICES=0
+    	python tools/test.py --config=configs2/COCO/SAPNet/SAPNet_r50_fpn_1x_coco_ms.py
     ```
 
 
