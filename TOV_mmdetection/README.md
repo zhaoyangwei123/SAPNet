@@ -88,8 +88,8 @@ PYTHONPATH=. python huicv/coarse_utils/noise_data_utils.py "generate_pseudo_bbox
     multi-gpu:
 	CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 PORT=10000 tools/dist_test.sh configs2/COCO/SAPNet/SAPNet_r50_fpn_1x_coco_ms.py 8
     single-gpu:
-    	export CUDA_VISIBLE_DEVICES=0
-    	python tools/test.py --config=configs2/COCO/SAPNet/SAPNet_r50_fpn_1x_coco_ms.py
+    export CUDA_VISIBLE_DEVICES=0
+    python tools/test.py --config=configs2/COCO/SAPNet/SAPNet_r50_fpn_1x_coco_ms.py
     ```
 
 
